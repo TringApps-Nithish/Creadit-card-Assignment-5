@@ -26,7 +26,7 @@ class crd_card implements Cloneable {
     }
 
     void display() {
-        System.out.println("  Card Holder Name  :  " +Card_holder_name+ "\n  Card Number       :  " +Card_number+ "\n  Card Expirey Date :  " +Card_Exp_Date);
+        System.out.println("  Card Holder Name  :  " +Card_holder_name+ "\n  Card Number       :  " +Card_number+ "\n  Card Expiry Date :  " +Card_Exp_Date);
     }
 
 }
@@ -40,7 +40,7 @@ class CRDCARD {
         String name = sc.next();
         System.out.printf(" Enter Card Number : ");
         int card_num = sc.nextInt();
-        System.out.printf(" Enter Expery Date : ");
+        System.out.printf(" Enter Expiry Date : ");
         String expdate = sc.next();
         crd_card obj = new crd_card(name,card_num,expdate);
         crd_card obj1 = (crd_card) obj.clone();
@@ -49,7 +49,7 @@ class CRDCARD {
         String name1= sc.next();
         System.out.printf(" Enter Card Number : ");
         int card_num1 = sc.nextInt();
-        System.out.printf(" Enter Expery Date : ");
+        System.out.printf(" Enter Expiry Date : ");
         String expdate1 = sc.next();
         crd_card obj2 = new crd_card(name1, card_num1,expdate1);
         System.out.printf("\n Members of Cloned Object -> \n\n");
