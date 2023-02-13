@@ -20,8 +20,8 @@ class crd_card implements Cloneable {
         return super.clone();
     }
 
-    boolean equals(int card_num1) {
-        boolean result = (Card_number == card_num1) ? true : false;
+    int equals(int card_num1) {
+        int result = (Card_number == card_num1) ? 1 : 0;
         return result;
     }
 
@@ -56,8 +56,8 @@ class CRDCARD {
         obj1.display();
         System.out.printf("\n Members of Object - 2 -> \n\n");
         obj2.display();
-        boolean ans = obj1.equals(card_num1);
-        if (ans)
+        int ans = obj1.equals(card_num1);
+        if (ans == 1)
             System.out.printf("\n Both Credit Card Numbers are Same ");
         else
             System.out.printf("\n Both Credit Card Numbers are Not Same ");
